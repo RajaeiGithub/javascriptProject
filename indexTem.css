@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(179, 176, 181);
+    width: 100%;
+    direction: rtl;
+    font-size: 111%;
+}
+h1{
+    text-align: center;
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+}
+#infor{
+    padding: 0 2%;
+    color: rgb(116, 16, 16);
+}
+
+
+
+
+
+#grand{
+    
+    margin: 2%  3%;
+    width:90%;
+    padding: 1%;
+    
+    box-shadow: 0px 0px 20px;
+
+    background-color: white;
+    display: block;
+}
+
+#topname {
+border-bottom: 1px solid orange;
+padding: 6px 0 ;
+
+}
+#topname p{
+    color: rgb(255, 255, 255);
+    display: inline;
+    background-color: orange;
+    padding: 7px;
+}
+#orng{
+    background-color: orange;
+}
+
+
+
+
+
+
+
+
+table a{
+    text-decoration:none ;
+    color: rgb(31, 28, 28);
+}
+
+table div{
+    text-align: center;
+    margin: 5%;
+    border-style: double;
+    padding: 3%;
+}
+table img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+table img:hover{
+    border-radius: 0%;
+}
+table p{
+    font-size: 17px;
+}
+table p:hover{
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+footer div{
+    color: rgb(182, 177, 177);
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 17%;
+}
+h4{
+    text-align:center ;
+    border-bottom: double;
+}
+footer a{
+    text-decoration: none;
+    color: greenyellow;
+}
+footer a:hover{
+    color: cyan;
+ text-shadow: 2px 0 2px 0 blue;
+}
+footer li{
+    padding: 5px;
+}
+footer li:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+

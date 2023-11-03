@@ -1,0 +1,16 @@
+body{
+    
+text-align: center;  
+background-color: aqua  
+
+}
+
+
+
+
+#grandl div{
+    background-image: url(pictuers/loginBack.png);
+    background-color: black;
+    width: 70%;
+
+}

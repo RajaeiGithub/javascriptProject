@@ -5,23 +5,62 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>loginpage</title>
 </head>
-<body>
+<body onresize = "imgshow()" >
     
-            <p style="color: blue;">hi</p>
-        <div id="#grandl">
            
-            <div>
-                <input type="text">
-                <input type="password">
-                <input type="checkbox">
-                <input type="bottom">
+        <div id="maingroundL">
+           <div id="groundL">
+            
+            <div id="centerdiv"><div>
+             <h1>ورود</h1>
+
+            <label class="label" for="inuser"><b> Username </b></label>
+            <input class="intext" type="text" placeholder="Enter Username" name="inuser" required>     
+            <br><br>
+            <label class="label" for="inpass"><b> password </b></label>
+            <input class="intext" type="password" placeholder="Enter password" name="inpass" required >
+            <br><br>
+            <input type="checkbox">
+            <span>!
+                رمز خود را
+                <a href="#">فراموش کردم</a>
+            </span>
+            <br><br>
+            <input type="submit" value="ورود">
+            <br><br><br>
+                <span>!
+                    <a href="#">حساب کاربری</a>
+                    ندارم
+                </span>
+            </div></div>
+           </div>
+
+
+            <div id="imggroundL">
             </div>
+
         </div>
 
+        <pre></pre>
 
 
 
+
+
+<script>//login img start up
+    if(window.innerWidth >=  1000  ){
+      document.getElementById("maingroundL").style.width = "900px";
+      document.getElementById("imggroundL").style.width = "450px";   
+    }
+    else{
+      document.getElementById("maingroundL").style.width = "450px";
+      document.getElementById("imggroundL").style.width = "0"; 
+    }</script>
+    
+
+
+        <script src="code.js"></script>
 </body>
 </html>

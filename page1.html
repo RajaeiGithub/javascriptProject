@@ -16,7 +16,7 @@
         <nav >
             <ul>
                 <li><a href="index.html">صفحه اصلی</a></li>
-                <li><a href="#">آموزش ها</a>
+                <li><a>آموزش ها</a>
                 <ul>
                     <li><a href="#">222</a></li>
                     <li><a href="#">222</a></li>
@@ -28,9 +28,9 @@
                     <li><a href="#">222</a></li>
                 </ul>
                 </li>
-                <li><a href="#">ورود</a>
+                <li><a>ورود</a>
                 <ul>
-                    <li><a href="#">ورود</a></li>
+                    <li><a href="loginPage.html">ورود</a></li>
                     <li><a href="#">ثبت نام</a></li>
                 </ul>
                 </li>
@@ -100,8 +100,22 @@
 
 
 
+        <script>//change size start up
+            if(window.innerWidth >= 1000){
+              document.getElementById("mySidenav").style.width = "15%";
+              document.getElementById("grand").style.marginLeft = "250px";
+              document.getElementById("grand").style.width = "75%";
+              document.getElementById("fot").style.marginLeft = "250px";
+            }
+            else{
+              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("grand").style.width = "90%";
+              document.getElementById("grand").style.marginLeft= "0";
+              document.getElementById("fot").style.marginLeft = "0";     
+            }</script>
 
-        <script src="code.js">
-        </script>
+
+
+        <script src="code.js"></script>
 </body>
 </html>

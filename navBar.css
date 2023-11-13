@@ -37,7 +37,7 @@ header nav ul ul{
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-box-shadow: 0px -100px 500px rgba(0,0,0,0);
-        box-shadow:0px -100px 500px rgba(0,0,0,0);
+  box-shadow:0px -100px 500px rgba(0,0,0,0);
 }
 header nav  ul  li:hover > ul{
     -webkit-transition: all 500ms ease-in-out 0ms;
@@ -66,7 +66,11 @@ header nav ul {
     -webkit-perspective: 200px;
     -ms-perspective: 200px;
     perspective: 200px;
+
+  text-align: left;
+
 }
+
 header nav ul:after{
     content: "";
     clear: both;
@@ -105,6 +109,7 @@ header nav ul ul{
     padding: 0;
     border-radius: 0 0 5px 5px;
     background: #1b00e8;
+  text-align: right;
 }
 header nav ul ul li{
     float: none;
@@ -115,7 +120,7 @@ header nav ul ul li:last-of-type{
     border-radius: 0 0 5px 5px;
 }
 header nav ul ul li a{
-    padding: 8px 21px;
+    padding: 8px 16px;
 }
 
 header nav ul li ul li{

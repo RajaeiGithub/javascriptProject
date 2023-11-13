@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(179, 176, 181);
+    font-size: 111%;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+}
+#infor{
+    padding: 0 2%;
+    color: rgb(116, 16, 16);
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+#grand{
+    direction: rtl;
+    text-align: right;
+
+    margin: 2%  3%;
+    width:90%;
+    padding: 1%;
+
+    min-width: 250px;
+    
+
+    box-shadow: 0px 0px 20px;
+
+    background-color: white;
+    display: block;
+}
+
+#topname {
+    border-bottom: 1px solid orange;
+    padding: 6px 0 ;
+    margin-bottom: 10px;
+}
+#topname p{
+    color: rgb(255, 255, 255);
+    display: inline;
+    background-color: orange;
+    padding: 7px;
+}
+
+
+
+
+
+
+
+#mainflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+}
+
+
+
+
+
+
+
+.inmainflex{
+    text-align: center;
+    display: inline-block;
+    margin: 4px;
+    padding: 3px;
+    border: solid 2px black;
+   
+    
+
+}
+.inmainflex img{
+    width: 200px;
+    height: 80px;
+    border-radius: 100%;
+}
+.inmainflex img:hover{
+    border-radius: 0;
+}
+.inmainflex p{
+    color: blue;
+}
+.inmainflex p:hover{
+    font-weight: bold;
+    
+
+
+}
+
+
+@media (min-width: 1238px) {
+    #mainflex{
+        justify-content: right;
+    } }
+@media (max-width: 512px){
+    .inmainflex{
+  width: 96%;        
+    
+    }
+ 
+}
+
+
+
+
+
+
+
+

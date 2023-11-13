@@ -8,8 +8,21 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up</title>
+
+<style>
+.label{
+    margin-top:20px;
+}
+
+#loginB{
+    margin: 40px 0 30px 0;
+}
+</style>
+
 </head>
+
+
 <body onresize = "imgshow()" onscroll="visibel()">
     
     <header id="head1">
@@ -31,9 +44,9 @@
                     <li><a href="#">888</a></li>
                     <li><a href="#">999</a></li>
                 </ul>
-                </li>         
-                
-                
+                </li> 
+
+
                 <li><a href="#">درباره سایت</a></li>    
             </ul>
         </nav>
@@ -45,52 +58,47 @@
     <body id="body">
         
            
-        <div id="maingroundL">
+     <div id="maingroundL">
            <div id="groundL">
             
             <div id="centerdiv"><div>
-             <h1>ورود</h1>
+             <h1>ثبت نام</h1>
+
+
+            <label class="label" for="inmail"><b> Email </b></label>
+            <input class="intext" type="email" placeholder="Enter Email" name="inmail" required>   <br>
 
             <label class="label" for="inuser"><b> Username </b></label>
             <input class="intext" type="text" placeholder="Enter Username" name="inuser" required>   <br>  
             
+
             <label class="label" for="inpass"><b> password </b></label>
             <input class="intext" type="password" placeholder="Enter password" name="inpass" required > <br>
             
+            <label class="label" for="inpass2"><b> repeat password </b></label>
+            <input class="intext" type="password" placeholder="Enter repeat password" name="inpass2" required > <br>
 
-            <div id="midlogin">
-            <span>
-                !<p>مرا به یاد داشته باش:</p>
-            <input type="checkbox" checked>
-            </span>
-
-                   <span id="space"> | </span>
-
-            <span>
-                <p>رمز خود را</p>
-                <a href="pictuers/signup.jpg">فراموش کردم</a>
-            </span>
-            
-            </div><br>
+           
 
             
-            <input type="submit" id="loginB" value="ورود"><br>
+            <input type="submit" id="loginB" value="ثبت نام"><br>
             
                 <span>
-                    <p>حساب کاربری ندارم!</p>
-                     <p style="letter-spacing: 5px;"> -------- </p>
-                    (<a href="signUpPage.html"> ساخت حساب کاربری جدید </a>)
+                    <p>حساب کاربری دارم!</p>
+                     <p style="letter-spacing: 5px;"> --------------- </p>
+                    (<a href="loginPage.html"> وارد شدن </a>)
                 </span>
             </div></div>
            </div>
 
 
-            <div id="imggroundL"  style="background-image: url(pictuers/loginBack2.jpg);">
-            </div>
-
+         <div id="imggroundL"  style="background-image: url(pictuers/signup.jpg);">
+                
         </div>
 
-        <pre></pre>
+     </div>
+
+       
 
     </body>
 

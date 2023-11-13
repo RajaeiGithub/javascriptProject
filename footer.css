@@ -1,0 +1,28 @@
+
+footer div{
+    display: block;
+    text-align: left;
+    color: rgb(182, 177, 177);
+    background-color: black;
+    margin-top: 5px;
+    padding: 10px;
+
+}
+h4{
+    text-align:center ;
+    border-bottom: double;
+}
+footer a{
+    text-decoration: none;
+    color: greenyellow;
+}
+footer a:hover{
+    color: cyan;
+ text-shadow: 2px 0 2px 0 blue;
+}
+footer li{
+    padding: 5px;
+}
+footer li:hover{
+    color: red;
+}

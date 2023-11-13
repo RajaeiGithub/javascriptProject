@@ -17,17 +17,17 @@ else
 
 //change size
 function checksize(){
-     if(window.innerWidth >= 1000){
-     document.getElementById("mySidenav").style.width = "15%";
-     document.getElementById("grand").style.marginLeft = "250px";
-     document.getElementById("grand").style.width = "75%";
-     document.getElementById("fot").style.marginLeft = "250px";
+     if(window.innerWidth >= 900){
+     document.getElementById("mySidenav").style.width = "17%";
+     document.getElementById("grand").style.marginLeft = "19%";
+     document.getElementById("grand").style.width = "73%";
+     document.getElementById("fot").style.marginLeft = "17%";
    }
    
    else{
      document.getElementById("mySidenav").style.width = "0";
      document.getElementById("grand").style.width = "90%";
-     document.getElementById("grand").style.marginLeft= "0";
+     document.getElementById("grand").style.marginLeft= "2%";
      document.getElementById("fot").style.marginLeft = "0";
    }}
    

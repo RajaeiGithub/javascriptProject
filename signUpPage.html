@@ -23,39 +23,50 @@
 </head>
 
 
-<body onresize = "imgshow()" onscroll="visibel()">
+<body onresize = "imgshow() & checksizenav()" onscroll="visibel()">
+    
     
     <header id="head1">
 
-        <nav >
+        <div><button id="buttonnavshow"  onclick="showsidenav()"> ☰ </button></div>
+
+        <nav id="navbar">
+            
+            <div>  <button  onclick="closesidenav()">✖</button> </div>
+
             <ul>
                 <li><a href="index.html">صفحه اصلی</a></li>
 
 
-                <li><a>آموزش ها</a>
-                <ul>
-                    <li><a href="page1.html">جاوا اسکریپت چیست؟</a></li>
+                <li><a href="javascript:void(0)"><span id="ar1" onclick="showli1()">▾</span> آموزش ها</a>
+                <ul id="subul1">
+                    <li><a href="page1.html">222</a></li>
                     <li><a href="#">222</a></li>
-                    <li><a href="#">333</a></li>
-                    <li><a href="#">444</a></li>
-                    <li><a href="#">555</a></li>
-                    <li><a href="#">666</a></li>
-                    <li><a href="#">777</a></li>
-                    <li><a href="#">888</a></li>
-                    <li><a href="#">999</a></li>
+                    <li><a href="#">222</a></li>
+                    <li><a href="#">222</a></li>
+                    <li><a href="#">222</a></li>
+                    <li><a href="#">222</a></li>
+                    <li><a href="#">222</a></li>
+                    <li><a href="#">222</a></li>
                 </ul>
-                </li> 
+                </li>
 
 
-                <li><a href="#">درباره سایت</a></li>    
+                <li><a href="javascript:void(0)"><span id="ar2" onclick="showli2()">▾</span> ورود</a>
+                <ul id="subul2">
+                    <li><a href="loginPage.html">ورود</a></li>
+                    <li><a href="signUpPage.html">ثبت نام</a></li>
+                </ul>
+                </li>
+                <li><a href="#">درباره سایت</a></li>      
             </ul>
         </nav>
-        
-    </header >
+       
+    </header>
 
         
 
-    <body id="body">
+    <body id="bodyy">
         
            
      <div id="maingroundL">
@@ -85,7 +96,7 @@
             
                 <span>
                     <p>حساب کاربری دارم!</p>
-                     <p style="letter-spacing: 5px;"> --------------- </p>
+                     <p style="letter-spacing: 5px;"> -------------- </p>
                     (<a href="loginPage.html"> وارد شدن </a>)
                 </span>
             </div></div>
@@ -116,7 +127,7 @@
                 <li><a href="#">لینک4</a></li>
                 <li><a href="#">our gmail:</a></li>
     
-                <h4><b>بدون کپی رایت</b></h4>
+                <h4><b>کپی رایت</b></h4>
             </ul>
 
         </div>

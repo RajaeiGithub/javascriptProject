@@ -13,6 +13,9 @@ h1{
     padding: 0 2%;
     color: rgb(116, 16, 16);
 }
+a{
+    text-decoration: none;
+}
 
 
 
@@ -25,7 +28,10 @@ h1{
     margin: 2%  3%;
     width:90%;
     padding: 1%;
+
+    min-width: 250px;
     
+
     box-shadow: 0px 0px 20px;
 
     background-color: white;
@@ -33,9 +39,9 @@ h1{
 }
 
 #topname {
-border-bottom: 1px solid orange;
-padding: 6px 0 ;
-
+    border-bottom: 1px solid orange;
+    padding: 6px 0 ;
+    margin-bottom: 10px;
 }
 #topname p{
     color: rgb(255, 255, 255);
@@ -43,56 +49,62 @@ padding: 6px 0 ;
     background-color: orange;
     padding: 7px;
 }
-#orng{
-    background-color: orange;
+
+
+
+
+
+
+
+#mainflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
 }
 
 
 
 
-
-
-
-
-table a{
-    text-decoration:none ;
-    color: rgb(31, 28, 28);
-}
-
-table div{
+.inmainflex{
     text-align: center;
-    margin: 5%;
-    border-style: double;
-    padding: 3%;
-}
-table img{
-    border-radius: 100%;
-    width: 100%;
-    height: 100%;
     display: inline-block;
+    margin: 4px;
+    padding: 3px;
+    border: solid 2px black;
+   
+    
+
 }
-table img:hover{
-    border-radius: 0%;
+.inmainflex img{
+    width: 200px;
+    height: 80px;
+    border-radius: 100%;
 }
-table p{
-    font-size: 17px;
+.inmainflex img:hover{
+    border-radius: 0;
 }
-table p:hover{
-    font-size: 22px;
+.inmainflex p{
+    color: blue;
+}
+.inmainflex p:hover{
+    font-weight: bold;
+    
+
+
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 1238px) {
+    #mainflex{
+        justify-content: right;
+    } }
+@media (max-width: 512px){
+    .inmainflex{
+  width: 96%;        
+    
+    }
+ 
+}

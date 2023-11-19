@@ -10,44 +10,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A</title>
 </head>
-<body onscroll="visibel()">
+<body  onresize="checksizenav()" onscroll="visibel()">
     
 
     <header id="head1">
 
-        <nav >
+        <div><button id="buttonnavshow"  onclick="showsidenav()"> ☰ </button></div>
+
+        <nav id="navbar">
+            
+            <div>  <button  onclick="closesidenav()">✖</button> </div>
+
             <ul>
-                <li><a href="#">صفحه اصلی</a></li>
+                <li><a href="index.html">صفحه اصلی</a></li>
 
 
-                <li><a>آموزش ها</a>
-                <ul>
-                    <li><a href="page1.html">جاوا اسکریپت چیست؟</a></li>
+                <li><a href="javascript:void(0)"><span id="ar1" onclick="showli1()">▾</span> آموزش ها</a>
+                <ul id="subul1">
+                    <li><a href="page1.html">222</a></li>
                     <li><a href="#">222</a></li>
-                    <li><a href="#">333</a></li>
-                    <li><a href="#">444</a></li>
-                    <li><a href="#">555</a></li>
-                    <li><a href="#">666</a></li>
-                    <li><a href="#">777</a></li>
-                    <li><a href="#">888</a></li>
-                    <li><a href="#">999</a></li>
+                    <li><a href="#">222</a></li>
+                    <li><a href="#">222</a></li>
+                    <li><a href="#">222</a></li>
+                    <li><a href="#">222</a></li>
+                    <li><a href="#">222</a></li>
+                    <li><a href="#">222</a></li>
                 </ul>
                 </li>
 
 
-                <li><a>ورود</a>
-                <ul>
+                <li><a href="javascript:void(0)"><span id="ar2" onclick="showli2()">▾</span> ورود</a>
+                <ul id="subul2">
                     <li><a href="loginPage.html">ورود</a></li>
                     <li><a href="signUpPage.html">ثبت نام</a></li>
                 </ul>
                 </li>
-                <li><a href="#">درباره سایت</a></li>    
+                <li><a href="#">درباره سایت</a></li>      
             </ul>
         </nav>
-        
-    </header >
+       
+    </header>
 
 
+    
      <body>    
           
         <div id="grand">
@@ -61,70 +66,90 @@
             <br>
             <hr>
 
-            <div id="topname">
-                <p>آموزش جاوا اسکریپت</p>
-                
+            <section id="topname">
+                <p>آموزش جاوا اسکریپت</p>      
+            </section>
+            
+            <div id="mainflex">
+
+                    <div class="inmainflex">
+                        <a href="page1.html">
+                        <img src="pictuers/Best-Online-JavaScript-Courses-750x300.png">
+                        <p>جاواسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="page2js.html">
+                        <img src="pictuers/Javascript-history.jpg">
+                        <p>تاریخچه جاواسکریپت</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="#">
+                        <img src="pictuers/Best-Online-JavaScript-Courses-750x300.png">
+                        <p>12جاوا اسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="#">
+                        <img src="pictuers/imagesJS.jpg">
+                        <p>12جاوا اسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="#">
+                        <img src="pictuers/imagesJS.jpg">
+                        <p>12جاوا اسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="#">
+                        <img src="pictuers/imagesJS.jpg">
+                        <p>12جاوا اسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="#">
+                        <img src="pictuers/imagesJS.jpg">
+                        <p>12جاوا اسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="#">
+                        <img src="pictuers/imagesJS.jpg">
+                        <p>12جاوا اسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="#">
+                        <img src="pictuers/imagesJS.jpg">
+                        <p>12جاوا اسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="#">
+                        <img src="pictuers/imagesJS.jpg">
+                        <p>12جاوا اسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="#">
+                        <img src="pictuers/imagesJS.jpg">
+                        <p>12جاوا اسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    <div class="inmainflex">
+                        <a href="#">
+                        <img src="pictuers/imagesJS.jpg">
+                        <p>12جاوا اسکریپت چیست؟</p>
+                        </a>
+                    </div>
+                    
+                    
+
             </div>
             
-            <table>
-                <tr>
-                    <td><a href="page1.html"><div>
-                        <img src="pictuers/Best-Online-JavaScript-Courses-750x300.png">
-                        <p>جاوا اسکریپت چیست؟</p>
-                    </div></a></td>
-                    <td><a href="#"><div>
-                        <img src="pictuers/imagesJS.jpg">
-                        <p>آموزش دوم</p>
-                    </div></a></td>
-                    <td><a href="#"><div>
-                        <img src="pictuers/imagesJS.jpg">
-                        <p>آموزش سوم</p>
-                    </div></a></td>
-                    <td><a href="#"><div>
-                        <img src="pictuers/imagesJS.jpg">
-                        <p>آموزش چهارم</p>
-                    </div></a></td>
-                </tr>
-
-                <tr>
-                    <td><a href="#"><div>
-                        <img src="pictuers/Beautiful Landscapes Wallpapers_YasDL.com (74).jpg">
-                        <p>آموزش پنجم</p>
-                    </div></a></td>
-                    <td><a href="#"><div>
-                        <img src="pictuers/Beautiful Landscapes Wallpapers_YasDL.com (74).jpg">
-                        <p>آموزش ششم</p>
-                    </div></a></td>
-                    <td><a href="#"><div>
-                        <img src="pictuers/Beautiful Landscapes Wallpapers_YasDL.com (74).jpg">
-                        <p>آموزش هفتم</p>
-                    </div></a></td>
-                    <td><a href="#"><div>
-                        <img src="pictuers/Beautiful Landscapes Wallpapers_YasDL.com (74).jpg">
-                        <p>آموزش هشتم</p>
-                    </div></a></td>
-                </tr>
-
-                <tr>
-                    <td><a href="#"><div>
-                        <img src="pictuers/Beautiful Landscapes Wallpapers_YasDL.com (74).jpg">
-                        <p>آموزش نهم</p>
-                    </div></a></td>
-                    <td><a href="#"><div>
-                        <img src="pictuers/Beautiful Landscapes Wallpapers_YasDL.com (74).jpg">
-                        <p>آموزش دهم</p>
-                    </div></a></td>
-                    <td><a href="#"><div>
-                        <img src="pictuers/Beautiful Landscapes Wallpapers_YasDL.com (74).jpg">
-                        <p>آموزش یازدهم</p>
-                    </div></a></td>
-                    <td><a href="#"><div>
-                        <img src="pictuers/Beautiful Landscapes Wallpapers_YasDL.com (74).jpg">
-                        <p>آموزش دوازدهم</p>
-                    </div></a></td>
-                </tr>
-            </table>
-            <hr id="orng">
+            <hr color="orange" size="1px">
 
         </div>
    
@@ -134,7 +159,7 @@
 
      
 
-     <footer dir="ltr">
+     <footer dir="ltr" id="fot">
 
         <div>
             
@@ -153,8 +178,7 @@
      </footer>
 
 
-
-
+     <button onclick="topFunction()" id="topbot" title="Go to top"> ↑ </button>
 
 
 

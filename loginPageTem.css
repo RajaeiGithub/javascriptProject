@@ -1,6 +1,7 @@
 body{
     background-color: rgb(179, 176, 181);
     text-align: center;
+    font-size: 111%;
 }
 
 
@@ -11,10 +12,11 @@ h1{
     margin-bottom: 30px;
     font-size: 37px;
 }
-div{
-display: inline-block;
+#maingroundL , #maingroundL div{
+    display: inline-block;
 }
-p{
+
+#maingroundL p{
     display: inline;
 }
 
@@ -109,7 +111,7 @@ float: right;
     margin: 10px 0;
 }
 #space{
-    margin: 0 30px;
+    margin: 0 25px;
 }
 
 

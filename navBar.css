@@ -5,15 +5,38 @@ header{
     position: sticky;
     top: 0;
 }
+button{
+    cursor: pointer;
+}
+header nav a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+header nav li{
+    list-style-type: none;
+}
+
+
+/*  nav one  */
+@media (min-width: 601px ) {
 header nav {
-  color:hsl(0, 0%, 100%);
-  margin: 0 auto;
-  width:600px;   
+     display: block;
+    
+      color:hsl(0, 0%, 100%);
+      margin: 0 auto;
+      width:600px;   
 }
-header a {
-  text-decoration:none;
-  color:inherit;
+
+header > div{
+    display: none;
 }
+header nav div{
+    display: none;
+}
+
+
 
 header nav ul ul{
     -webkit-transition: all 500ms ease-in-out 500ms;
@@ -127,3 +150,108 @@ header nav ul li ul li{
     border-bottom: 1px solid red;
     padding: 0%;
 }
+
+}
+
+
+
+
+
+/*  nav two  */
+@media (max-width: 600px ){
+
+header > div{
+    display: block;
+  text-align: right;
+ padding: 10px 22px;
+}
+#buttonnavshow{
+    display: inline-block;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    padding: 4px 12px;
+}
+
+
+
+
+
+
+header span{
+    float: left;
+}
+
+header nav{
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: scroll;
+    scroll-behavior: smooth;
+
+    height: 100%;
+    background-color: whitesmoke;
+    width: 100%;
+    opacity: 95%;
+}
+
+header > nav div{
+    background-color: black;
+    text-align: left;
+    padding: 10px;
+}
+
+header > nav > div button{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 4px 12px;
+    margin-left: 12px;
+    
+}
+
+header nav a{
+    display: block;
+    color: white;
+    background-color:#006dda;
+    padding: 10px;
+}
+
+nav > ul{
+    margin: 10px;
+    text-align: right;
+
+}
+nav a:hover{
+         background-color:#208fffa7; 
+}
+    
+nav ul li ul{
+    display: none;  
+}
+nav ul li ul li{
+    padding: 13px 23px;
+}
+
+nav > ul > li{
+    background-color:#006dda;
+    margin: 15px;
+}
+
+nav ul li ul li a{
+    background-color: #003263;
+}
+
+
+
+
+
+
+}
+
+
+
+

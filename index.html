@@ -10,10 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A</title>
 </head>
-<body  onresize="checksizenav()" onscroll="visibel()">
+<body onresize="checksizenav()" onscroll="visibel()">
     
 
-    <header id="head1">
+    <header dir="ltr" id="head1">
 
         <div><button id="buttonnavshow"  onclick="showsidenav()"> ☰ </button></div>
 
@@ -27,14 +27,9 @@
 
                 <li><a href="javascript:void(0)"><span id="ar1" onclick="showli1()">▾</span> آموزش ها</a>
                 <ul id="subul1">
-                    <li><a href="page1.html">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
+                    <li><a href="JS Page/page1.html">جاواسکریپت چیست</a></li>
+                    <li><a href="JS Page/page2.html">تاریخچه جاواسکریپت</a></li>
+                    <li><a href="JS Page/Page3.html">متغیرها در جاواسکریپت</a></li>
                 </ul>
                 </li>
 
@@ -53,15 +48,19 @@
 
 
     
-     <body>    
+     <body dir="rtl">    
           
         <div id="grand">
 
-            <h1>به سایت <U>A</U> خوش آمدید </h1>
+            <h1>Welcome to <i>Java Master</i></h1>
             <hr>
             <br>
 
-            <p id="infor"><b>در این سایت شما با زبان های برنامه نویسی و طراحی سایت  آشنا می شوید و درباره آنها آموزش میبینید.</b></p>
+            <p id="infor">
+                  در این سایت درباره دو زبان کامپیوتری آموزش میبینید.
+                  یکی برای برنامه‌نویسی و دیگری برای طراحی سایت.
+                  جاوا و جاواسکریپت دو زبان قدیمی,معروف و بسیار پرکاربرد.
+            </p>
 
             <br>
             <hr>
@@ -73,33 +72,33 @@
             <div id="mainflex">
 
                     <div class="inmainflex">
-                        <a href="page1.html">
+                        <a href="JS Page/page1.html">
                         <img src="pictuers/Best-Online-JavaScript-Courses-750x300.png">
                         <p>جاواسکریپت چیست؟</p>
                         </a>
                     </div>
                     <div class="inmainflex">
-                        <a href="page2js.html">
+                        <a href="JS Page/page2.html">
                         <img src="pictuers/Javascript-history.jpg">
                         <p>تاریخچه جاواسکریپت</p>
                         </a>
                     </div>
                     <div class="inmainflex">
-                        <a href="#">
-                        <img src="pictuers/Best-Online-JavaScript-Courses-750x300.png">
+                        <a href="JS Page/Page3.html">
+                        <img src="pictuers/page3.png">
                         <p>12جاوا اسکریپت چیست؟</p>
                         </a>
                     </div>
                     <div class="inmainflex">
                         <a href="#">
                         <img src="pictuers/imagesJS.jpg">
-                        <p>12جاوا اسکریپت چیست؟</p>
+                        <p>js4</p>
                         </a>
                     </div>
                     <div class="inmainflex">
                         <a href="#">
                         <img src="pictuers/imagesJS.jpg">
-                        <p>12جاوا اسکریپت چیست؟</p>
+                        <p>js5</p>
                         </a>
                     </div>
                     <div class="inmainflex">
@@ -159,20 +158,36 @@
 
      
 
-     <footer dir="ltr" id="fot">
+     <footer dir="rtl" id="fot">
 
-        <div>
-            
-            <ul>
-                <li><a href="#">لینک1</a></li>
-                <li><a href="#">لینک2</a></li>
-                <li><a href="#">لینک3</a></li>
-                <li><a href="#">لینک4</a></li>
-                <li><a href="#">our gmail:</a></li>
-    
-                <h4><b>بدون کپی رایت</b></h4>
-            </ul>
+        <div id="divlinks">
+     
+                <div>
+                    <h4> درباره سایت Java Master: </h4>
+                    <p>در این سایت درباره دو زبان کامپیوتری آموزش میبینید.
+                        یکی برای برنامه‌نویسی و دیگری برای طراحی سایت.
+                        جاوا و جاواسکریپت دو زبان قدیمی,معروف و بسیار پرکاربرد.</p>
+                </div>
 
+                <div id="newsdiv"><h4>جدیدترین مطالب:</h4>
+                    <ul>
+                        <li><a href="">js4</a></li>
+                        <li><a href="JS Page/Page3.html">متغیرها در جاواسکریپت</a></li>
+                        <li><a href="JS Page/page2.html">تاریخچه جاواسکریپت</a></li>
+                        <li><a href="JS Page/page1.html">جاواسکریپت چیست</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <div id="nemad"> <h4>نمادها و مجوزها:</h4>  <img src="pictuers/enemad2.png" alt="Enemad">  <img src="pictuers/samandehi2.png" alt="samandehi"></div>
+                    
+                    <div id="icon"> <h4>راه های ارتباطی:</h4> <img src="pictuers/Ticon.jpg" alt="Telegeram">  <img src="pictuers/Ticon.png" alt="twitter">  <img src="pictuers/Insicon.jpg" alt="">   <img src="pictuers/Dicon.jpg" alt=""></div>
+                </div>
+                 
+        </div>
+
+        <div id="divwrite">
+            <h5>دارای کمی کپی رایت</h5>
         </div>
 
      </footer>

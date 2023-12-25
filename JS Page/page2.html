@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="navBar.css">
-    <link rel="stylesheet" href="pagesTem.css">
-    <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="/navBar.css">
+        <link rel="stylesheet" href="/pagesTem.css">
+        <link rel="stylesheet" href="/footer.css">
 
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+    <title>تاریخچه جاواسکریپت</title>
 
-    <link rel="stylesheet" href="sideBar.css">
+    <link rel="stylesheet" href="/sideBar.css">
 </head>
 <body onresize="checksize() & checksizenav()"  onscroll="visibel()">
 
@@ -25,27 +25,22 @@
             <div>  <button  onclick="closesidenav()">✖</button> </div>
 
             <ul>
-                <li><a href="index.html">صفحه اصلی</a></li>
+                <li><a href="/index.html">صفحه اصلی</a></li>
 
 
                 <li><a href="javascript:void(0)"><span id="ar1" onclick="showli1()">▾</span> آموزش ها</a>
                 <ul id="subul1">
-                    <li><a href="page1.html">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
-                    <li><a href="#">222</a></li>
+                    <li><a href="page1.html">جاواسکریپت چیست</a></li>
+                    <li><a href="Page3.html">متغیرها در جاواسکریپت</a></li>
+                    <li><a href="Page4.html">عبارت های شرطی در جاوا اسکریپت</a></li>
                 </ul>
                 </li>
 
 
                 <li><a href="javascript:void(0)"><span id="ar2" onclick="showli2()">▾</span> ورود</a>
                 <ul id="subul2">
-                    <li><a href="loginPage.html">ورود</a></li>
-                    <li><a href="signUpPage.html">ثبت نام</a></li>
+                    <li><a href="/loginPage.html">ورود</a></li>
+                    <li><a href="/signUpPage.html">ثبت نام</a></li>
                 </ul>
                 </li>
                 <li><a href="#">درباره سایت</a></li>      
@@ -55,26 +50,30 @@
     </header>
 
         
-    <div id="mySidenav" class="sidenav">
-        <a href="page1.html">جاواسکریپت چیست؟</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
+    
       
     
-
-
-
-    <body>
+        <div id = "parent">   
         
+            <div id="mySidenav" class="sidenav">
+                <h3> مطالب جاوااسکریپت </h3>
+                <hr>
+                <ol>
+                <li><a href="page1.html">جاواسکریپت چیست؟</a></li>   
+                <li><a href="page2.html">تاریخچه جاواسکریپت</a></li>
+                <li><a href="Page3.html">متغیرها در جاواسکریپت</a></li>
+                <li><a href="Page4.html">عبارت های شرطی در جاوا اسکریپت</a></li>
+                </ol>
+            </div>  
+          
+        <div id="bgrand">
     <div id="grand">
 
 
         <h1>تاریخچه جاواسکریپت</h1>
         <hr>
         
-        <span id="titleimg"><img src="pictuers/Javascript-history.jpg" alt="a"></span>
+        <span id="titleimg"><img src="/pictuers/Javascript-history.jpg" alt="a"></span>
 
         <hr>
         
@@ -90,58 +89,75 @@
         <p>نت‌اسکیپ جاوااسکریپت را به سازمان اکما اینترنشنال برای استانداردسازی ارسال کرده‌است و نتیجه نسخهٔ استاندارد شده‌ای به نام اکما اسکریپت است.</p>
         <p>جاوااسکریپت به یکی از زبان‌های برنامه‌نویسی پرطرفدار در وب تبدیل شده‌است. هر چند ابتدا بسیاری از برنامه‌نویسان حرفه‌ای زبان را کم ارزش تلقی می‌کردند چون مخاطبان آن نویسندگان صفحات وب و آماتورهای این چنینی بودند. ظهور ایجکس بار دیگر جاوااسکریپت را در معرض توجه قرار داد و برنامه‌نویسان حرفه‌ای بیشتری را به خود جذب نمود. نتیجه ازدیاد فریمورک و کتابخانه‌های جامعی در این زمینه، بهبود شیوه‌های رایج برنامه‌نویسی در جاوااسکریپت و افزایش کاربرد جاوااسکریپت خارج از وب است.</p>
 
+
+        </div>
     </div>
+</div>
 
-
-
-
-
-
-    </body>
-           
+        
 
             
                     
             
-    <footer dir="ltr" id="fot">
+<footer dir="rtl" id="fot">
 
-        <div>
+    <div id="divlinks">
+ 
+            <div>
+                <h4> درباره سایت Java Master: </h4>
+                <p>در این سایت درباره دو زبان کامپیوتری آموزش میبینید.
+                    یکی برای برنامه‌نویسی و دیگری برای طراحی سایت.
+                    جاوا و جاواسکریپت دو زبان قدیمی,معروف و بسیار پرکاربرد.</p>
+            </div>
+
+            <div id="newsdiv"><h4>جدیدترین مطالب:</h4>
+                <ul>
+                    <li><a href="Page4.html">عبارت های شرطی در جاوا اسکریپت</a></li>
+                    <li><a href="Page3.html">متغیرها در جاواسکریپت</a></li>
+                    <li><a href="page2.html">تاریخچه جاواسکریپت</a></li>
+                    <li><a href="page1.html">جاواسکریپت چیست</a></li>
+                </ul>
+            </div>
             
-            <ul>
-                <li><a href="#">لینک1</a></li>
-                <li><a href="#">لینک2</a></li>
-                <li><a href="#">لینک3</a></li>
-                <li><a href="#">لینک4</a></li>
-                <li><a href="#">our gmail:</a></li>
-    
-                <h4><b>کپی رایت</b></h4>
-            </ul>
+            <div>
+                <div id="nemad"> <h4>نمادها و مجوزها:</h4>  <img src="/pictuers/enemad2.png" alt="Enemad">  <img src="/pictuers/samandehi2.png" alt="samandehi"></div>
+                
+                <div id="icon"> <h4>راه های ارتباطی:</h4> <img src="/pictuers/Ticon.jpg" alt="Telegeram">  <img src="/pictuers/Ticon.png" alt="twitter">  <img src="/pictuers/Insicon.jpg" alt="Instageram">   <img src="/pictuers/Dicon.jpg" alt="Discorde"></div>
+            </div>
+             
+    </div>
 
-        </div>
+    <div id="divwrite">
+        <h5>دارای کمی کپی رایت</h5>
+    </div>
 
-     </footer>
+ </footer>
 
 
      <button onclick="topFunction()" id="topbot" title="Go to top"> ↑ </button>
 
 
 
-        <script>//change size start up
-            if(window.innerWidth >= 900){
-            document.getElementById("mySidenav").style.width = "17%";
-            document.getElementById("grand").style.marginLeft = "19%";
-            document.getElementById("grand").style.width = "73%";
-            document.getElementById("fot").style.marginLeft = "17%";
-            }
-            else{
-              document.getElementById("mySidenav").style.width = "0";
-              document.getElementById("grand").style.width = "90%";
-              document.getElementById("grand").style.marginLeft= "2%";
-              document.getElementById("fot").style.marginLeft = "0";     
-            }</script>
+     <script>
+        if(window.innerWidth >= 900){
+    var b = (window.innerWidth) - 228;
+    document.getElementById("mySidenav").style.width = "200px";
+    
+    document.getElementById("bgrand").style.width = b+"px";
+
+    document.getElementById("fot").style.marginLeft = "190px";
+  }
+        else{   
+    document.getElementById("mySidenav").style.width = "0";
+   
+    document.getElementById("bgrand").style.width = "99%";
+
+    document.getElementById("fot").style.marginLeft = "0";
+}
+     </script>
 
 
 
-        <script src="code.js"></script>
+        <script src="/code.js"></script>
 </body>
 </html>

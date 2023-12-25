@@ -4,6 +4,7 @@ header{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 90;
 }
 button{
     cursor: pointer;
@@ -246,10 +247,25 @@ nav ul li ul li a{
 }
 
 
+}
 
 
 
 
+            /*   scroll bar   */
+
+::-webkit-scrollbar{
+    width: 20px;
+    border-radius: 10px;
+    background-color: #80FFEA;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0px -3px 14px #348781;    
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient( to right ,#80AAFF,#3030AF,#80AAFF);
+    border-radius: 10px;
 }
 
 

@@ -1,16 +1,37 @@
-footer div{
-    display: block;
-    text-align: left;
+footer #divlinks{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
     color: rgb(182, 177, 177);
     background-color: black;
     margin-top: 5px;
     padding: 10px;
+    
+    
+}
+
+
+footer #divwrite{
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 10px;
+   
 
 }
-h4{
+h5{
     text-align:center ;
-    border-bottom: double;
+    border: double;
+    padding: 10px;
+    margin: 0% 10%;
+    
 }
+
+
 footer a{
     text-decoration: none;
     color: greenyellow;
@@ -21,10 +42,42 @@ footer a:hover{
 }
 footer li{
     padding: 5px;
+    list-style: square;
 }
 footer li:hover{
     color: red;
 }
+footer p{
+    line-height: 25px;
+}
+
+
+
+#divlinks > div{
+    padding: 5px 10px;
+    border: solid gray 1px;
+    text-align: right;
+    width: 300px;
+    margin: 10px 5px;
+}
+
+#nemad img{
+    text-align: center;
+    width: 60px;
+    padding-top: 10px 0;
+    margin-right: 20%;
+}
+#nemad{
+    border-bottom: solid gray 1px;
+}
+#icon img{
+    width: 30px;
+    margin-right: 12%;
+}
+
+
+
+
 
 
 
@@ -40,7 +93,7 @@ footer li:hover{
     position: fixed; 
     bottom: 10px;
     right: 5px; 
-    z-index: 90; 
+    z-index: 80; 
     border: none; 
     outline: none; 
     background-color: blue; 

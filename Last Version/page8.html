@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+        <link rel="stylesheet" href="/navBar.css">
+        <link rel="stylesheet" href="/pagesTem.css">
+        <link rel="stylesheet" href="/footer.css">
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>تاریخچه جاواسکریپت</title>
+
+    <link rel="stylesheet" href="/sideBar.css">
+</head>
+<body onresize="checksize() & checksizenav()"  onscroll="visibel()" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+   
+
+    <header id="head1">
+
+        <div><button id="buttonnavshow"  onclick="showsidenav()"> ☰ </button></div>
+
+        <nav id="navbar">
+            
+            <div>  <button  onclick="closesidenav()">✖</button> </div>
+
+            <ul>
+                <li><a href="/index.html">صفحه اصلی</a></li>
+
+
+                <li><a href="javascript:void(0)"><span id="ar1" onclick="showli1()">▾</span> آموزش ها</a>
+                <ul id="subul1">
+                    <li><a href="page1.html">جاواسکریپت چیست</a></li>
+                    <li><a href="Page3.html">متغیرها در جاواسکریپت</a></li>
+                    <li><a href="Page4.html">عبارت های شرطی در جاوا اسکریپت</a></li>
+                </ul>
+                </li>
+
+
+                <li><a href="javascript:void(0)"><span id="ar2" onclick="showli2()">▾</span> ورود</a>
+                <ul id="subul2">
+                    <li><a href="/loginPage.html">ورود</a></li>
+                    <li><a href="/signUpPage.html">ثبت نام</a></li>
+                </ul>
+                </li>
+                <li><a href="#">درباره سایت</a></li>      
+            </ul>
+        </nav>
+       
+    </header>
+
+        
+    
+      
+    
+    <div id = "parent">   
+        
+        <div id="mySidenav" class="sidenav">
+            <h3>دیگر مطالب JS</h3>
+            <hr>
+            <ol>
+            <li><a href="page1.html">جاواسکریپت چیست؟</a></li>   
+            <li><a href="page2.html">تاریخچه جاواسکریپت</a></li>
+            <li><a href="Page3.html">متغیرها در جاواسکریپت</a></li>
+            <li><a href="Page4.html">عبارت های شرطی در جاوا اسکریپت</a></li>
+            </ol>
+        </div>  
+      
+    <div id="bgrand">
+<div id="grand">
+
+
+    <h1 id="Ch0">کار با متغیرها در جاواسکریپت</h1>
+    <hr>
+    
+    <span id="titleimg"><img src="/pictuers/page3.png" alt="a"></span>
+
+    <hr>
+    
+
+    <p>طور کلی متغیر یا Variable یک ظرف برای نگهداری مقادیر داده ها می باشد ، یعنی به راحتی میتونیم داده هامون رو بریزیم تو این ظرف ها بعد مثلا پردازش مورد نظرمون رو روشون اعمال کنیم و در نهایت به خروجی بفرستیمشون.</p>     
+    <p>حالا نه فقط در جاواسکریپت ، بلکه در تمامی زبان های برنامه نویسی نیز میشه متغیر یا Variable تعریف کرد و در کل میتوان همانند ظرفی برای نگهداری مقادیر ازشون استفاده کرد.</p>
+    <p>در جاواسکریپت ما با استفاده از ۳ کلمه کلیدی var و let و const میتونیم متغیرها رو تعریف کنیم.</p>
+    <p>تا قبل از سال ۲۰۱۵ ، تنها روشی که میشد باهاش متغیرها رو در جاواسکریپت تعریف کرد استفاده از کلمه کلیدی var بود.</p>
+    <p>با انتشار ورژن  یا نسخه ۲۰۱۵ زبان جاواسکریپت که با نام رسمی ES6 – ECMAScript 2015 دو تا  کلمه کلیدی بنام های  let و const هم منتشر شد.</p>
+    <hr>
+
+    <h3 id="Ch1">نحوه تعریف یا Declaring کردن متغیرها</h3>
+    <p>به تعریف یا ایجاد کردن یک متغیر میگن Declaring ، که شکل کلی برای تعریف متغیر در زبان جاوا اسکریپت بصورت زیر می باشد (در این مثال از var استفاده می شود) :</p>
+    <div class="imgInPage">
+        <p> 1.تعریف متغیرها : جدا جدا و هر کدوم در یک خط :</p>
+        <img src="/pictuers/Page img/3.1.png" alt="3.1">
+    </div>
+
+    <div class="imgInPage">
+        <p> 2.تعریف متغیرها : بصورت فشرده پست سرهم :</p>
+        <img src="/pictuers/Page img/3.2.png" alt="3.2">
+    </div>
+
+    <hr>   
+
+    <h3 id="Ch2" >نحوه مقدار دادن به متغیرها</h3>
+    <p>خب ما میتونیم به متغیرهایی که تعریف میکنیم مقدار بدیم، که این مقدار دادن میتونه از چندین روش مختلف اعمال بشه ولی خب همشون درکل یکارو انجام میدن اونم اینه که به متغیر مقدار بدن.</p>
+    <div class="imgInPage">
+            <p>1.تعریف مستقیم مقدار :</p>
+            <img src="/pictuers/Page img/3.3.png" alt="3.3">
+    </div>
+    <div class="imgInPage">
+        <p>2.تعریف غیر مستقیم مقدار :</p>
+        <img src="/pictuers/Page img/3.4.png" alt="3.4">
+    </div>
+    <div class="imgInPage">
+        <p>3.تعریف فشرده متغیرها بهمراه مقادیر :</p>
+        <img src="/pictuers/Page img/3.5.png" alt="3.5">
+    </div>
+
+    <hr>
+
+    <h3 id="Ch3">قوانین انتخاب نام متغیرها </h3>
+    <p> باید نام یک متغیر ( Unique Name ) باشه ، یعنی منظورش اینه که نام ها باید منحصربفرد باشند ، یعنی اگه نامی برای یک متغیر تعریف میکنیم باید اون نام در تمام برنامه همون یکی باشه و نباید نام متغیرها شبیه هم باشن.</p>
+    <p>در مثال های بالا خب دیدیم که ما مثلا متغیرهایی بنام a و b و c به راحتی تعریف کردیم و این نشون میده که نام متغیر میتونه یه نام دلخواه خودتون باشه و حتما اینجوری نیست که مثلا باید a باشه.            </p>
+    <p>ولی خب همین نام دلخواه یسری قوانین داره که باید رعایت کنیم ، این قوانین به شرح زیر می باشد :</p>
+    <div class="listInPage">
+        <ol>
+            <li>نام متغیر باید از حروف کوچک یا بزرگ انگلیسی ( a-z یا A-Z ) باشد ( میتونه هم ترکیبی باشه )                    </li>
+            <li>نام متغیر میتونه شامل اعداد ( ۰ تا ۹ ) باشد، ولی اعداد نباید در ابتدای نام متغیر باشند                    </li>
+            <li>نام متغیر میتونه با علامت _ ( زیر خط یا Underscore ) شروع بشه                    </li>
+            <li>نام متغیر میتونه با علامت $ ( دلار ) شروع بشه                    </li>
+            <li>نام متغیر به حروف کوچک و بزرگ حساس می باشد. ( یعنی A با a براش متفاوته )
+            <li>نام متغیر نمیتونه از کلمات کلیدی یا کلمات رزرو شده خوده جاوااسکریپت باشه                    </li>
+        </ol>
+    </div>
+    <hr>
+
+    <h3 id="Ch4">تفاوت های بین Var و Let و Const</h3>
+    <p>خب هرسه تاش که میدونیم برای تعریف متغیر و نگهداری داده ها هستن و از این بابت هیچ فرقی ندارند نحوه تعریف و مقدار دهیشان هم تقریبا یکی است ولی خب یسری تفاوت هایی در نحوه استفاده دارند که در ادامه باهاشون آشنا خواهید شد :            </p>
+    <div class="listInPage">
+        <ol>
+            <li>متغیر Var رو میشه دوباره تعریف کرد و مقدار جدید بهش داد</li>
+            <li>متغیر Var رو میشه اول بهش مقدار داد بعد تعریفش کرد</li>
+            <li>متغیر Let رو نمیشه دوباره تعریف کرد و مقدار جدید بهش داد</li>
+            <li>متغیر Let رو نمیشه اول بهش مقدار داد بعدش تعریفش کرد</li>
+            <li>مقدار متغیر Const همواره ثابت هستش و در داخل برنامه قابل تغییر نیست</li>
+            <li>متغیر Const رو نمیشه دوباره تعریف کرد و مقدار جدید بهش داد</li>
+            <li>متغیر Const رو نمیشه اول بهش مقدار داد بعدش تعریفش کرد</li>
+        </ol>
+    </div>
+    <hr>
+
+    
+</div>
+</div>
+
+
+    <div id="pointer">
+        <h3> مطالب این صفحه</h3>
+        <hr>
+        
+        <ul>
+            <li><a href="#Ch0">کار با متغیرها در جاواسکریپت</a>
+                <br>
+            <ul>
+                <li><a  onshow="Ff1()" id="Ii1" href="#Ch1">نحوه تعریف یا Declaring کردن متغیرها</a></li>
+                <li><a id="Ii2" href="#Ch2">نحوه مقدار دادن به متغیرها</a></li>
+                <li><a onfocus="Ff3()" id="Ii3" href="#Ch3">قوانین انتخاب نام متغیرها </a></li>
+                <li><a  href="#Ch4">تفاوت های بین Var و Let و Const</a></li>
+            </ul>
+        </li>         
+        </ul>
+        <button id="pointerclose" onclick="closepointer()">▶</button>
+
+    </div>
+
+</div>
+
+        
+
+            
+                    
+            
+<footer dir="rtl" id="fot">
+
+    <div id="divlinks">
+ 
+            <div>
+                <h4> درباره سایت Java Master: </h4>
+                <p>در این سایت درباره دو زبان کامپیوتری آموزش میبینید.
+                    یکی برای برنامه‌نویسی و دیگری برای طراحی سایت.
+                    جاوا و جاواسکریپت دو زبان قدیمی,معروف و بسیار پرکاربرد.</p>
+            </div>
+
+            <div id="newsdiv"><h4>جدیدترین مطالب:</h4>
+                <ul>
+                    <li><a href="Page4.html">عبارت های شرطی در جاوا اسکریپت</a></li>
+                    <li><a href="Page3.html">متغیرها در جاواسکریپت</a></li>
+                    <li><a href="page2.html">تاریخچه جاواسکریپت</a></li>
+                    <li><a href="page1.html">جاواسکریپت چیست</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <div id="nemad"> <h4>نمادها و مجوزها:</h4>  <img src="/pictuers/enemad2.png" alt="Enemad">  <img src="/pictuers/samandehi2.png" alt="samandehi"></div>
+                
+                <div id="icon"> <h4>راه های ارتباطی:</h4> <img src="/pictuers/Ticon.jpg" alt="Telegeram">  <img src="/pictuers/Ticon.png" alt="twitter">  <img src="/pictuers/Insicon.jpg" alt="Instageram">   <img src="/pictuers/Dicon.jpg" alt="Discorde"></div>
+            </div>
+             
+    </div>
+
+    <div id="divwrite">
+        <h5>دارای کمی کپی رایت</h5>
+    </div>
+
+ </footer>
+
+
+     <button onclick="topFunction()" id="topbot" title="Go to top"> ↑ </button>
+
+
+
+     <script>
+            if(window.innerWidth >= 900){
+        var b = (window.innerWidth) - 235;
+        if(window.innerWidth >= 1200){
+            document.getElementById("pointer").style.width = "200px";
+            document.getElementById("bgrand").style.marginRight = "200px";
+            document.getElementById("fot").style.marginRight = "200px";
+            b -= 200;
+        } else{
+            document.getElementById("pointer").style.width = "0px";
+            document.getElementById("bgrand").style.marginRight = "0px";
+            document.getElementById("fot").style.marginRight = "0px";
+        }
+
+    document.getElementById("mySidenav").style.width = "200px";
+    document.getElementById("bgrand").style.width = b+"px";
+    document.getElementById("fot").style.marginLeft = "200px";
+  }
+            else{   
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("pointer").style.width = "0px";
+    document.getElementById("bgrand").style.width = "99%";
+    document.getElementById("bgrand").style.marginRight = "0px";
+    document.getElementById("fot").style.margin = "0";
+}
+     </script>
+
+
+
+        <script src="/code.js"></script>
+</body>
+</html>

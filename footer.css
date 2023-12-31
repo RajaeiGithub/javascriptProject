@@ -1,3 +1,4 @@
+
 footer #divlinks{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
@@ -11,7 +12,7 @@ footer #divlinks{
     margin-top: 5px;
     padding: 10px;
     
-    
+
 }
 
 
@@ -91,8 +92,8 @@ footer p{
 #topbot{
     display: none;
     position: fixed; 
-    bottom: 10px;
-    right: 5px; 
+    bottom: 35px;
+    right: 10px; 
     z-index: 80; 
     border: none; 
     outline: none; 
@@ -104,7 +105,7 @@ footer p{
     font-size: 30px; 
     font-weight: bold;
     box-shadow: black -3px 3px 5px; 
-    transition-duration: 0.1s ;
+    transition-duration: 0.2s ;
 }
 #topbot:hover{
         background-color: rgb(0, 204, 204);

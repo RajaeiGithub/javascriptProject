@@ -1,15 +1,14 @@
 .sidenav{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   direction: rtl;
    
   text-align: right;
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
   top: 90px;
   left: 0;
+  z-index: 1;
   background-color:rgb(117, 117, 117);
   overflow-x: hidden;
   transition: 0.5s;
@@ -18,7 +17,7 @@
 }
 
 .sidenav li{
-  margin: 0px 0px 10px 5px;
+  margin: 0px 0px 15px 5px;
   color: #000;
   transition: 1.5s;  
 }
@@ -33,5 +32,62 @@
   color: #fff;
 }
 .sidenav a:hover {
-  color: #000000;
+  color: #000;
+}
+
+
+
+
+
+/*          بخش نشان دهنده مسیر  pointer            */
+
+#pointer{
+  transition: 0.5s;
+  font-size: 18px;
+  
+  text-align: right;
+  height: 100%;
+  overflow-x: hidden;
+  
+  width: 0;
+  position: fixed;
+  top: 90px;
+  right: 0;
+  z-index: 1;
+
+background-color:rgb(117, 117, 117);
+padding-top: 10px;
+border-radius: 10px;
+}
+
+#pointer li{
+  margin: 0px 0px 12px 0px;
+}
+#pointer a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+ 
+}
+#pointer ul{
+  padding: 0px 15px 0px 5px;
+  list-style: none;
+}
+
+#pointerclose{
+  display: none;
+  position: fixed;
+   bottom: 2px; 
+   right: 160px;
+   background-color: green;
+   color: white;
+   border: none;
+   padding: 5px 8px;
+   border-radius: 7px;
+   font-size: 15px;
+}
+#pointerclose:hover{
+  background-color: forestgreen;
+  border: solid black 1px;
 }

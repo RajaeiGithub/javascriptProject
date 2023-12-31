@@ -2,6 +2,9 @@ body{
     background-color: rgb(179, 176, 181);
     font-size: 111%;
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    position: relative;
 }
 h1{
     text-align: center;
@@ -45,9 +48,6 @@ h3{
 
 
 
-
- 
-
 #titleimg {
     display: block;
     text-align: center;
@@ -62,25 +62,28 @@ h3{
     font-size: 20px;
     word-spacing: 5px;
     line-height: 33px;
+    padding: 10px;
 }
 
 .imgInPage{   
    display: flex;
-   
-   margin: 20px;
+   padding: 5px 25px 5px 5px;
    justify-content: space-between;
    flex-flow: row wrap;  
 }
 .imgInPage p{
-display: inline-block;
 margin: 0; 
 line-height: 15px;
 font-size: 15px;
+margin-bottom: 13px;
 }
 .imgInPage img{
-   display: inline-block;  
+    margin-bottom: 7px;
+    margin-right: 23px;
 }
+
 
 .listInPage li{
     margin: 10px 5px;
 }
+

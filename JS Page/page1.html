@@ -55,10 +55,11 @@
     
   
  
-    <div id = "parent">   
+<div id = "parent">   
         
+
         <div id="mySidenav" class="sidenav">
-        <h3> مطالب جاوااسکریپت </h3>
+        <h3> دیگر مطالب JS </h3>
         <hr>
         <ol>
         <li><a href="page1.html">جاواسکریپت چیست؟</a></li>   
@@ -67,12 +68,13 @@
         <li><a href="Page4.html">عبارت های شرطی در جاوا اسکریپت</a></li>
         </ol>
         </div>  
+
       
     <div id="bgrand">
     <div id="grand">
 
 
-        <h1>جاواسکریپت چیست؟</h1>
+        <h1 id="Ch0">جاواسکریپت چیست؟</h1>
         <hr>
         
         <span id="titleimg"><img src="/pictuers/Best-Online-JavaScript-Courses-750x300.png" alt="a"></span>
@@ -88,7 +90,22 @@
 
     </div>
     </div>
+          
+
+    <div id="pointer">
+        <h3> مطالب این صفحه</h3>
+        <hr>
+        
+        <ul>
+            <li><a href="#Ch0">جاواسکریپت چیست</a></li>
+                
+        </ul>  
+
+        <button id="pointerclose" onclick="closepointer()">▶</button>
+
     </div>
+
+</div>
   
                       <br>
 
@@ -136,23 +153,33 @@
 
 
 
-        <script>
-         if(window.innerWidth >= 900){
-     var b = (window.innerWidth) - 228;
-     document.getElementById("mySidenav").style.width = "200px";
-     
-     document.getElementById("bgrand").style.width = b+"px";
+     <script>
+        if(window.innerWidth >= 900){
+    var b = (window.innerWidth) - 235;
+    if(window.innerWidth >= 1200){
+        document.getElementById("pointerclose").style.display = "inline-block";
+        document.getElementById("pointer").style.width = "200px";
+        document.getElementById("bgrand").style.marginRight = "200px";
+        document.getElementById("fot").style.marginRight = "200px";
+        b -= 200;
+    } else{
+        document.getElementById("pointer").style.width = "0px";
+        document.getElementById("bgrand").style.marginRight = "0px";
+        document.getElementById("fot").style.marginRight = "0px";
+    }
 
-     document.getElementById("fot").style.marginLeft = "190px";
-   }
-         else{   
-     document.getElementById("mySidenav").style.width = "0";
-    
-     document.getElementById("bgrand").style.width = "99%";
-
-     document.getElementById("fot").style.marginLeft = "0";
+document.getElementById("mySidenav").style.width = "200px";
+document.getElementById("bgrand").style.width = b+"px";
+document.getElementById("fot").style.marginLeft = "200px";
 }
-        </script>
+        else{   
+document.getElementById("mySidenav").style.width = "0";
+document.getElementById("pointer").style.width = "0px";
+document.getElementById("bgrand").style.width = "99%";
+document.getElementById("bgrand").style.marginRight = "0px";
+document.getElementById("fot").style.margin = "0";
+}
+     </script>
 
 
 

@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="/sideBar.css">
 
 </head>
-<body id="Bb" onresize="checksize() & checksizenav()"   onscroll="visibel()" > 
+<body id="Bb"   onresize="checksize() & checksizenav()"   onscroll="visibel()" > 
 
    
 
@@ -58,7 +58,7 @@
     <div id = "parent">   
         
         <div id="mySidenav" class="sidenav">
-        <h3> مطالب جاوااسکریپت </h3>
+        <h3> دیگر مطالب JS </h3>
         <hr>
         <ol>
         <li><a href="page1.html">جاواسکریپت چیست؟</a></li>   
@@ -72,19 +72,20 @@
     <div id="grand">
 
 
-        <h1>عبارت های شرطی در جاوا اسکریپت</h1>
+        <h1 id="Ch0">عبارت های شرطی در جاوا اسکریپت</h1>
         <hr>
         
         <span id="titleimg"><img src="/pictuers/Page4.png" alt="a"></span>
 
         <hr>
         
-
-        <p>نه فقط در جاوااسکریپت بلکه در همه ی زبان های برنامه نویسی از جمله ( #PHP , C و.. ) این عبارت های شرطی یا هم دستورات شرطی وجود دارند. Conditional Statements عبارت های شرطی در جاوا اسکریپت</p>
+        <p>  عبارت های شرطی (Conditional Statements) نه فقط در جاوااسکریپت بلکه در همه ی زبان های برنامه نویسی از جمله ( #PHP , C و.. ) این عبارت های شرطی یا هم دستورات شرطی وجود دارند.</p>
         <p>اسمش روشه ، یعنی شرط گذاشتن یا شرط ایجاد کردن ، یعنی تصمیم گیری بر اساس شرط های مختلف ، یعنی اجرای یک برنامه طبق شرایط خاصی که ما میتونیم این شرایط ( شرط هارو ) تعریف کنیم.</p>
         <hr>
 
-        <h3>انواع دستورات شرطی در جاوا اسکریپت</h3>
+
+        <h3 id="Ch1">انواع دستورات شرطی در جاوا اسکریپت</h3>
+
         <p>ما در زبان جاوااسکریپت ( و البته میتونیم بگیم در اکثر زبان های برنامه نویسی ) چندین نوع یا حالت از دستورات شرطی داریم که این حالت ها بصورت زیر می باشد :</p>
         <div class="listInPage">
             <ol>
@@ -97,12 +98,104 @@
         <p>۳ تا دستور شرطی اول رو که میتونیم بگیم یکی هستند، یعنی در واقع در یک مجموعه هستند و معمولا باهم مورد استفاده قرار میگیرند ولی خب فقط if رو میشه تکی تنها هم ازش استفاده کرد.</p>
         <hr>
 
-        <h3>دستور شرطی if در جاوا اسکریپت</h3>
+
+        <h3 id="Ch2">دستور شرطی if در جاوا اسکریپت</h3>
+
+        <p> دستور if ( در لغت به فارسی یعنی اگر / چنانچه ) ، این دستور اصلی ترین و یا میتونیم بگیم ستون اصلی دستورات شرطی می باشد. یعنی اگه بخواید از else یا else if  استفاده کنید باید قبلش حتما از if استفاده کرده باشید، در غیراینصورت برنامه بهتون خروجی نمیده.</p>
+        <div class="imgInPage">
+            <p>شکل کلی دستور if در جاوا اسکریپت بصورت زیر می باشد :</p>
+            <img src="/pictuers/Page img/4.1.png" alt="3.5">
+        </div>
+        <hr>
+
+        
+        <h3 id="Ch3">دستور شرطی else در جاوا اسکریپت</h3>
+
+        <p>در مثال قبلی خب بله مقادیر متغیر a و b باهم مساوی بودن و بهمون پیغام میداد که ” آره برابره “، ولی خب اگه برابر نبود چی؟! شاید من بخوام اگه مقادیر متغیرها باهم برابر نبود، دوباره یه پیغام دیگه بده و بگه مثلا ” شرمنده برابر نیست ” ، خب دیگه اینجاست که دستور else میاد وسط.</p>
+        <div class="imgInPage">
+            <p>شکل کلی دستور else بصورت زیر می باشد :</p>
+            <img src="/pictuers/Page img/4.2.png" alt="4.2">
+        </div>
+        <hr>
+
+
+        <h3 id="Ch4">دستور شرطی else if در جاوا اسکریپت</h3>
+        <p>این دستور داره میگه ( در غیراینصورت اگر ) ، یعنی در واقع اگه بخش اول شرط ( که با if ) مشخصش میکردیم غلط بود میاد و else if رو بررسی میکنه و اگه else if درست بود خب دیگه همینو به خروجی میفرسته، ولی اگه باز else if هم غلط بود و از else هم استفاده کرده باشیم میره و else رو بررسی میکنه و هرچی مقدار else بود در خروجی نمایشش میده.</p>
+        <div class="imgInPage">
+            <p>شکل کلی دستور else if بصورت زیر می باشد :</p>
+            <img src="/pictuers/Page img/4.3.png" alt="4.3">
+        </div>
+        <hr>
+
+
+        <h3 id="Ch5">دستور Switch در جاوا اسکریپت</h3><p></p>
+
+        <p>بطور کلی با استفاده از این دستور شرطی میتونیم چندین شرط مختلف و همزمان رو بهمراه چندین مقدار مختلف و همزمان رو ایجاد و یا تعریف کنیم.</p>
+        <p>یجورایی میشه گفت تاحدودی دستور switch شبیه به else if می باشد، چون خب else if اگه یادتون باشه چندین حالت از شرط رو ایجاد میکرد حال switch هم همینکارو میکنه ولی خب در نوشتار باهمدیگه فرق میکنند.</p>
+        <div class="imgInPage">
+            <p>شکل کلی دستور شرطی switch در زبان جاوااسکریپت رو بصورت زیر میتونیم نمایش بدیم :</p>
+            <img src="/pictuers/Page img/4.4.png" alt="4.4">
+        </div>
+        <hr>
+
+
+        <h3 id="Ch6">کلمه کلیدی break در دستور switch</h3>
+
+        <p>کلمه break در لغت به فارسی یعنی ( شکسته شدن یا دست نگه داشتن یا خارج کردن ) ما با استفاده از این کلمه کلیدی در دستور سوئیچ میتونیم عمل اجرای دستور رو متوقف کنیم و دیگه برنامه از حلقه خارج میشه.</p>
+        <p>در مثال  قبلی دیدید که ما از break همواره استفاده کردیم و حواستون باشه استفاده از این کلمه کلیدی خیلی مهمه و ضروری هست که حتما ازش در switch استفاده کرده باشید.</p>
+        <p>بفرض مثال ما گفتیم اگه متغیر a مقدارش برابر بود با ۵ خب یه کیس براش تعریف کردیم که مثلا در خروجی نمایش بده ” آره ۵ هست ” ، حال برنامه وقتی بهش میرسه و میبینه مقدارش ۵ هست خب اول در خروجی میگه ” آره ۵ هست ” و بعدش با استفاده از break حلقه رو میشکنه یا اینجوری بگیم اجرای حلقه رو متوقف میکنه.</p>
+        <p>یادتون باشه همیشه حتما از break بلافاصله بعد از case هاتون استفاده نمایید، چون اگه یک کیس break نداشته باشه حتی اگه درست هم باشه بازم اجرا نمیشه و کیس بعدیش اجرا میشه.</p>
+        <hr>
+
+
+        <h3 id="Ch7">کلمه کلیدی default در دستور switch</h3>
+        <p>کلمه کلیدی default خب اسمش روشه دیگه، در لغت به فارسی میشه ( پیش فرض ) ما میتونیم با استفاده از این کلمه کلیدی یک مقدار پیش فرض برای سوئیچ مشخص کنیم.</p>
+        <p>یعنی میره دونه به دونه کیس هارو بررسی میکنه اگه هیچکدوم از کیس ها اونچیزی نبود که ما میخواستیم دیگه میره مقدار default رو در خروجی نشون میده.</p>
+        <div class="imgInPage">
+            <p>مثال :  اگه هیچکدوم از کیس ها برابر با متغیر a نبودند مقدار پیش فرض که با استفاده از کلمه کلیدی default مشخص شده رو در خروجی نشون میده :</p>
+            <img src="/pictuers/Page img/4.5.png" alt="4.5">
+        </div>
+        <hr>
+
+
+        <h3 id="Ch8">اجرای چندین کیس بصورت همزمان</h3>
+
+        <p>اگه با عملگرهای منطقی آشنا باشید میدونید که ما یه عملگر داریم به اسم || یعنی <b>یا</b> یعنی اگه فلان یا فلان بود تو فلان کارو کن، حال ما میتونیم بهمین شکل در سوئیچ بصورت همزمان عمل مقایسه رو بروی چندین کیس اجرا کنیم.</p>
+        <div class="imgInPage">
+            <p>مثال : استفاده از چندین کیس بصورت همزمان برای عمل مقایسه :</p>
+            <img src="/pictuers/Page img/4.6.png" alt="4.6">
+        </div>
 
 
     </div>
     </div>
+
+    <div id="pointer">
+        <h3> مطالب این صفحه</h3>
+        <hr>
+        
+        <ul>
+            <li><a href="#Ch0">عبارت های شرطی در جاوا اسکریپت</a>
+                <br>
+            <ul>
+                <li><a  href="#Ch1">انواع دستورات شرطی در جاوا اسکریپت</a></li>
+                <li><a  href="#Ch2">دستور شرطی if در جاوا اسکریپت</a></li>
+                <li><a  href="#Ch3">دستور شرطی else در جاوا اسکریپت</a></li>
+                <li><a  href="#Ch4">دستور شرطی else if در جاوا اسکریپت</a></li>
+                <li><a  href="#Ch5">دستور Switch در جاوا اسکریپت</a></li>
+                <li><a  href="#Ch6">کلمه کلیدی break در دستور switch</a></li>
+                <li><a  href="#Ch7">کلمه کلیدی default در دستور switch</a></li>
+                <li><a  href="#Ch8">اجرای چندین کیس بصورت همزمان</a></li>
+            </ul>
+        </li>         
+        </ul>
+
+        <button id="pointerclose" onclick="closepointer()">▶</button>
+
     </div>
+
+
+</div>
   
                       <br>
 
@@ -149,23 +242,33 @@
 
 
 
-        <script>
-         if(window.innerWidth >= 900){
-     var b = (window.innerWidth) - 228;
-     document.getElementById("mySidenav").style.width = "200px";
-     
-     document.getElementById("bgrand").style.width = b+"px";
+     <script>
+        if(window.innerWidth >= 900){
+    var b = (window.innerWidth) - 235;
+    if(window.innerWidth >= 1200){
+        document.getElementById("pointerclose").style.display = "inline-block";
+        document.getElementById("pointer").style.width = "200px";
+        document.getElementById("bgrand").style.marginRight = "200px";
+        document.getElementById("fot").style.marginRight = "200px";
+        b -= 200;
+    } else{
+        document.getElementById("pointer").style.width = "0px";
+        document.getElementById("bgrand").style.marginRight = "0px";
+        document.getElementById("fot").style.marginRight = "0px";
+    }
 
-     document.getElementById("fot").style.marginLeft = "190px";
-   }
-         else{   
-     document.getElementById("mySidenav").style.width = "0";
-    
-     document.getElementById("bgrand").style.width = "99%";
-
-     document.getElementById("fot").style.marginLeft = "0";
+document.getElementById("mySidenav").style.width = "200px";
+document.getElementById("bgrand").style.width = b+"px";
+document.getElementById("fot").style.marginLeft = "200px";
 }
-        </script>
+        else{   
+document.getElementById("mySidenav").style.width = "0";
+document.getElementById("pointer").style.width = "0px";
+document.getElementById("bgrand").style.width = "99%";
+document.getElementById("bgrand").style.marginRight = "0px";
+document.getElementById("fot").style.margin = "0";
+}
+     </script>
 
 
 
